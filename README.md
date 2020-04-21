@@ -36,6 +36,9 @@ public class Example : MonoBehaviour
 			var activeScene = SceneManager.GetActiveScene();
 			var buildIndex  = activeScene.buildIndex;
 
+            // m_test.Dispose が呼び出されていないため
+			// シーン遷移後もしくは Unity 終了時に
+            // 「解放漏れ」というテキストがログ出力される
 			SceneManager.LoadScene( buildIndex );
 		}
 	}
