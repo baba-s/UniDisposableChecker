@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniDisposableChecker
+namespace Kogane
 {
 	/// <summary>
 	/// <para>IDisposable.Dispose が呼び出されたかどうかを検知できるクラス</para>
